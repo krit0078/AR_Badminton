@@ -17,7 +17,7 @@
   <div id="loading">กำลังโหลด AR...</div>
 
   <a-scene
-    mindar-image="imageTargetSrc: marker/targets_b.mind;
+    mindar-image="imageTargetSrc: marker/targets_c.mind;
                   filterMinCF:0.0001;
                   filterBeta:0.3;
                   warmupTolerance:5;
@@ -65,7 +65,7 @@
   document.addEventListener("DOMContentLoaded", () => {
     const scene = document.querySelector("a-scene");
     const loadingEl = document.getElementById("loading");
-    const totalMarkers = 5;
+    const totalMarkers = 15;
 
     for (let i = 0; i < totalMarkers; i++) {
       const marker = document.createElement("a-entity");
